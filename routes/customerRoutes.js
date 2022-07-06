@@ -7,4 +7,10 @@ const router = express.Router();
 
 router.post('/signup', customerControllers.postCustomerSignup);
 
+router.post('/login', customerControllers.postCustomerLogin);
+
+router.get('/is-logged-in', customerControllers.getIsLoggedIn);
+
+router.get('/properties',  customerControllers.getProperties);
+
 module.exports = router;
